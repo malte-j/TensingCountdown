@@ -1,0 +1,25 @@
+{
+  "name": "TensingCountdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyGuardian42/TensingCountdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkyGuardian42/TensingCountdown/issues"
+  },
+  "homepage": "https://github.com/SkyGuardian42/TensingCountdown#readme",
+  "dependencies": {
+    "countdown": "^2.6.0",
+    "parcel-bundler": "^1.11.0"
+  }
+}
