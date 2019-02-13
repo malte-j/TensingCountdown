@@ -1,9 +1,5 @@
 var countdown = require('./countdown');
 
-console.log(countdown);
-
-//var countdown = require('./countdown');
-
 countdown.setLabels(
 	' Millisekunde| Sekunde| Minute| Stunde| Tag| Woche| Monat| année| décennie| siècle| millénaire',
 	' Millisekunden| Sekunden| Minuten| Stunden| Tagen| Wochen| Monate| années| décennies| siècles| millénaires',
