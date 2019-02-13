@@ -1,5 +1,8 @@
-const countdown = require('countdown');
+//imp require('countdown');
 
+//var countdown = require('./countdown');
+
+console.log(countdown)
 countdown.setLabels(
 	' Millisekunde| Sekunde| Minute| Stunde| Tag| Woche| Monat| année| décennie| siècle| millénaire',
 	' Millisekunden| Sekunden| Minuten| Stunden| Tage| Wochen| Monate| années| décennies| siècles| millénaires',
@@ -13,7 +16,7 @@ var timerId =
     (ts) => {
 
 			if(ts.value < 0)
-				document.querySelector('#pageTimer').innerHTML =  "Tensing in<br>" + ts.toString().replace(/,/g, "<br>");
+				document.querySelector('#pageTimer').innerHTML =  "TenSing in<br>" + ts.toString().replace(/,/g, "<br>");
     	else
 				document.querySelector('#pageTimer').innerHTML = "Die <br>TENSING<br> Show<br> findet<br>statt"
 		},
