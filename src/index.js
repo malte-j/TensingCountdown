@@ -9,11 +9,10 @@ countdown.setLabels(
 
 var timerId =
   countdown(
-    new Date(2019, 2, 9, 19, 30),
-    (ts) => {
-
+    new Date(2019, 2, 9, 19, 30), (ts) => {
 			if(ts.value < 0)
-				document.querySelector('#pageTimer').innerHTML =  "TenSing in<br>" + ts.toString().replace(/,/g, "<br>");
+				document.querySelector('#pageTimer').innerHTML =  '<a target="_blank" rel="noopener noreferrer" href="https://eversten.kirche-oldenburg.de/gesamtkirchengemeinde/ejo-mitte/ten-sing.html">TenSing</a> in<br>' + ts.toString().replace(/,/g, "<br>");
+
     	else
 				document.querySelector('#pageTimer').innerHTML = "Die <br>TENSING<br> Show<br> findet<br>statt"
 		},

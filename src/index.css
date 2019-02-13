@@ -1,26 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import './fonts/rubik';
+
 * {
 	box-sizing: border-box;
 }
 html {
 	height: 100%;
 	font-family: 'Rubik';
+	font-variant-numeric: tabular-nums;
 }
+
 body {
 	margin: 0;
 	height: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: column;
 }
-div {
-	font-size: 10vw
+
+a:visited {
+	color: blue;
 }
- 
+
+a:hover {
+	color: #1602cf;
+}
+
+div {
+	white-space: pre-line;
+	font-size: 9vw
+}
+
 @media screen and (min-width: 1000px) {
+	body {
+		flex-direction: row;
+	}
+
 	div {
-		font-family: 'Rubik';
-		font-size: 10vh
+		font-size: 9vh
 	}	
 }
