@@ -51,7 +51,7 @@ body {
 	#pageTimer {
 		font-size: calc(25px + 5vh);
 
-		flex-grow: 0;
+		flex-grow: 1;
 	}
 
 	.poster {
@@ -59,6 +59,8 @@ body {
 		margin-right: 6vmin;
 		width: auto;
 		height: 100%;
+		flex-grow: 4;
+
 	}
 
 }
