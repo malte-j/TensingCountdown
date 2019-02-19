@@ -3,40 +3,70 @@
 * {
 	box-sizing: border-box;
 }
+
+@import './fonts/rubik';
+
+* {
+	box-sizing: border-box;
+}
+
 html {
 	height: 100%;
-	font-family: 'Rubik';
-	font-variant-numeric: tabular-nums;
+	font-family: 'Rubik', sans-serif;
+	font-size: 120%; 
 }
 
 body {
-	margin: 0;
 	height: 100%;
+	margin: 0;
+}
+
+#app {
+	height: 100%;
+	padding: 20px 20px 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.timerWrapper {
+	flex-grow: 1;
+
+	font-size: calc(6px + 2vh);
+
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	flex-direction: column;
+	justify-content: center;
 }
 
-a:visited {
-	color: blue;
+img {
+	width: 100%;
+	height: auto;
 }
 
-a:hover {
-	color: #1602cf;
-}
-
-div {
-	white-space: pre-line;
-	font-size: 9vw
-}
-
-@media screen and (min-width: 1000px) {
-	body {
-		flex-direction: row;
+@media screen and (min-aspect-ratio: 10/14) {
+	html {
+		font-size: 300%;
 	}
 
-	div {
-		font-size: 9vh
-	}	
+	#app {
+		padding: 60px;
+
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	img {
+		height: 90vh;
+		max-height: 50vw;
+		width: auto;
+	}
+
+	.timerWrapper {
+		flex-grow: 0;
+		font-size: calc(14px + 4vw);
+
+	}
 }
